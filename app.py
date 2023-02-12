@@ -5,6 +5,8 @@ import datetime
 # 설치
 import jwt
 
+from bson import ObjectId
+
 app = Flask(__name__)
 
 ## certifi 맥OS 환경설정을 위한 패키지 설치입니다.
