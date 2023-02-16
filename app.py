@@ -58,3 +58,7 @@ def login():
         return jsonify({'result': 'success', 'token': token})
     else:
         return jsonify({'result': 'fail', 'msg': '아이디/비밀번호가 일치하지 않습니다.'})
+
+@app.route('/info')
+def info():
+    return render_template('addImage.html')
